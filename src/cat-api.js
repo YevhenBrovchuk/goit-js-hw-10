@@ -5,12 +5,6 @@ function fetchBreeds(BASE_URL, END_POINT) {
 
     return axios.get(`${BASE_URL}${END_POINT}`)
         .then(response => response
-            // console.log(response);
-            // if (!response.ok) {
-            //     throw new Error(response.statusText)
-            // }
-
-             
         )
 }
 

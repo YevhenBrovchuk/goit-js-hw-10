@@ -27,7 +27,9 @@ elements.pElError.setAttribute("hidden", true)
             console.log(elements.selectEl);
             
         })
-    .catch(() => { elements.pElError.removeAttribute("hidden")})
+        .catch(() => {
+            elements.pElError.removeAttribute("hidden")
+        })
         .finally(() => {
             elements.selectEl.removeAttribute("hidden"),
             elements.pElLoad.setAttribute("hidden", true)
