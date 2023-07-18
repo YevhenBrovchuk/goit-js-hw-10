@@ -44,6 +44,7 @@ elements.pElError.setAttribute("hidden", true)
 function setOutput(evt) {
     elements.pElLoad.removeAttribute("hidden")
     elements.pElError.setAttribute("hidden", true)
+    elements.divElCatInfo.innerHTML=""
     const breedId = evt.target.value
     console.log(breedId);
     fetchCatByBreed(BASE_URL, NEXT_POINT, breedId)
